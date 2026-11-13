@@ -32,7 +32,7 @@ export const MainCoinBanner: React.FC<MainCoinBannerProps> = ({
           alt={coin.name}
           className="h-14 w-14 shrink-0 rounded-full object-cover border-2 border-primary/50 shadow-md shadow-primary/20"
         />
-        <div className="absolute -bottom-1 -right-1 bg-primary text-black p-0.5 rounded-full" title="Raydium LaunchLab Certified">
+        <div className="absolute -bottom-1 -right-1 bg-primary text-black p-0.5 rounded-full" title="pump.fun Certified">
           <ShieldCheck className="w-3.5 h-3.5" />
         </div>
       </div>

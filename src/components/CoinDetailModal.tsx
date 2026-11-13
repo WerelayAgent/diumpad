@@ -153,7 +153,7 @@ export const CoinDetailModal: React.FC<CoinDetailModalProps> = ({
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-semibold text-foreground flex items-center gap-2">
                   <TrendingUp className="w-4 h-4 text-primary" />
-                  Raydium Bonding Curve Chart
+                  pump.fun Bonding Curve Chart
                 </span>
                 <span className="text-xs font-mono text-muted-foreground">Constant Product Formula</span>
               </div>
@@ -313,7 +313,7 @@ export const CoinDetailModal: React.FC<CoinDetailModalProps> = ({
             </div>
 
             <p className="text-[11px] text-muted-foreground text-center mt-3 font-mono">
-              Protected by Raydium LaunchLab constant product bonding curve.
+              Protected by pump.fun constant product bonding curve.
             </p>
           </div>
         </div>

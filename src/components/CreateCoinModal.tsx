@@ -79,7 +79,7 @@ export const CreateCoinModal: React.FC<CreateCoinModalProps> = ({
         id: `coin-${Date.now()}`,
         name: name.trim(),
         ticker: ticker.trim().toUpperCase(),
-        description: description.trim() || 'Fair launched on DiumPad via Raydium LaunchLab.',
+        description: description.trim() || 'Fair launched on DiumPad via pump.fun.',
         imageUrl: selectedAvatar,
         ca: randomCa,
         pair: 'SOL',
@@ -99,7 +99,7 @@ export const CreateCoinModal: React.FC<CreateCoinModalProps> = ({
 
       onCoinCreated(newCoin);
       setIsDeploying(false);
-      showToast(`Successfully launched $${newCoin.ticker} on Raydium LaunchLab!`);
+      showToast(`Successfully launched $${newCoin.ticker} on pump.fun!`);
       onClose();
     }, 1200);
   };
@@ -114,8 +114,8 @@ export const CreateCoinModal: React.FC<CreateCoinModalProps> = ({
               <Sparkles className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="font-display text-lg font-bold text-foreground">Launch a Coin on Raydium</h3>
-              <p className="text-xs text-muted-foreground">Raydium LaunchLab bonding curve with automated fee splits</p>
+              <h3 className="font-display text-lg font-bold text-foreground">Launch a Coin on pump.fun</h3>
+              <p className="text-xs text-muted-foreground">pump.fun bonding curve with automated fee splits</p>
             </div>
           </div>
           <button
@@ -305,7 +305,7 @@ export const CreateCoinModal: React.FC<CreateCoinModalProps> = ({
           <div className="flex items-center justify-between text-xs text-muted-foreground px-1">
             <span className="flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4 text-highlight" />
-              Raydium LaunchLab Fee: <strong className="text-foreground font-mono">0.05 SOL</strong>
+              pump.fun Fee: <strong className="text-foreground font-mono">0.05 SOL</strong>
             </span>
             <span className="font-mono">Bonding Target: <strong className="text-primary">85 SOL</strong></span>
           </div>
@@ -327,7 +327,7 @@ export const CreateCoinModal: React.FC<CreateCoinModalProps> = ({
               {isDeploying ? (
                 <>
                   <div className="h-4 w-4 rounded-full border-2 border-white/30 border-t-white animate-spin" />
-                  <span>Deploying to Raydium...</span>
+                  <span>Deploying to pump.fun...</span>
                 </>
               ) : (
                 <>

@@ -119,14 +119,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                   FAQ & Mechanics
                 </button>
                 <a
-                  href="https://raydium.io/launchpad/"
+                  href="https://pump.fun"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-xs text-muted-foreground hover:bg-accent hover:text-foreground transition-colors"
                 >
                   <span className="flex items-center gap-2.5">
                     <ShieldCheck className="w-3.5 h-3.5 text-highlight" />
-                    Raydium LaunchLab
+                    pump.fun
                   </span>
                   <ExternalLink className="w-3 h-3 opacity-60" />
                 </a>
@@ -151,24 +151,18 @@ export const Navbar: React.FC<NavbarProps> = ({
             </svg>
           </a>
 
-          {/* Raydium LaunchLab link */}
+          {/* pump.fun link */}
           <a
-            href="https://raydium.io/launchpad/"
+            href="https://pump.fun"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Raydium LaunchLab"
+            aria-label="pump.fun"
             className="inline-flex items-center justify-center rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent h-9 w-9 transition-colors"
-            title="Raydium LaunchLab"
+            title="pump.fun"
           >
-            <img
-              src="https://img-v1.raydium.io/icon/4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R.png"
-              alt="Raydium"
-              className="h-5 w-5 rounded-full"
-              onError={(e) => {
-                // Fallback SVG if external image fails
-                (e.target as HTMLElement).style.display = 'none';
-              }}
-            />
+            <div className="h-5 w-5 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-[10px] font-bold text-emerald-400 font-mono">
+              💊
+            </div>
           </a>
 
           {/* Wallet Button */}

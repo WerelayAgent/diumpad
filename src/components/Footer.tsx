@@ -20,7 +20,7 @@ export const Footer: React.FC<FooterProps> = ({ openDocsModal }) => {
 
         <div className="flex items-center gap-1.5 text-[11px] font-mono text-muted-foreground">
           <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-          <span>Built on Raydium LaunchLab</span>
+          <span>Powered by pump.fun</span>
         </div>
 
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 sm:ml-auto text-[11px]">
@@ -31,12 +31,12 @@ export const Footer: React.FC<FooterProps> = ({ openDocsModal }) => {
             FAQ
           </button>
           <a
-            href="https://raydium.io/launchpad/"
+            href="https://pump.fun"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-foreground transition-colors flex items-center gap-1"
           >
-            Raydium Protocol
+            pump.fun
           </a>
           <span className="text-muted-foreground/50">© 2026 DiumPad</span>
         </div>

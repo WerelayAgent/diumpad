@@ -24,7 +24,7 @@ export const DocsFaqModal: React.FC<DocsFaqModalProps> = ({
             </div>
             <div>
               <h3 className="font-display text-lg font-bold text-foreground">DiumPad Documentation & FAQ</h3>
-              <p className="text-xs text-muted-foreground">Raydium LaunchLab Architecture & Bonding Curve Specs</p>
+              <p className="text-xs text-muted-foreground">pump.fun Architecture & Bonding Curve Specs</p>
             </div>
           </div>
           <button
@@ -63,7 +63,7 @@ export const DocsFaqModal: React.FC<DocsFaqModalProps> = ({
                 1. What is DiumPad?
               </h4>
               <p>
-                DiumPad is the premier fair-launch platform built directly on top of <strong>Raydium LaunchLab</strong>. It allows anyone to create a Solana token in seconds with pre-programmed fee distribution mechanisms, turning standard speculative memecoins into self-sustaining community engines.
+                DiumPad is the premier fair-launch platform powered by <strong>pump.fun</strong>. It allows anyone to create a Solana token in seconds with pre-programmed fee distribution mechanisms, turning standard speculative memecoins into self-sustaining community engines.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export const DocsFaqModal: React.FC<DocsFaqModalProps> = ({
                 2. Bonding Curve & 85 SOL Target
               </h4>
               <p>
-                Every token launched on DiumPad begins on a Raydium constant product bonding curve. As traders buy, price increases algorithmically. Once the bonding target of <strong>85 SOL</strong> is reached:
+                Every token launched on DiumPad begins on a pump.fun constant product bonding curve. As traders buy, price increases algorithmically. Once the bonding target of <strong>85 SOL</strong> is reached:
               </p>
               <ul className="list-disc pl-5 mt-2 space-y-1 text-foreground/80">
                 <li>Trading on the initial curve closes automatically.</li>
@@ -110,7 +110,7 @@ export const DocsFaqModal: React.FC<DocsFaqModalProps> = ({
           <div className="mt-5 space-y-4 text-xs">
             <div className="p-3.5 rounded-xl border border-border bg-background/40">
               <p className="font-bold text-foreground mb-1">How much does it cost to launch a coin?</p>
-              <p className="text-muted-foreground">Launching on DiumPad costs only 0.05 SOL to cover Solana network account rent and Raydium LaunchLab initialization.</p>
+              <p className="text-muted-foreground">Launching on DiumPad costs only 0.05 SOL to cover Solana network account rent and pump.fun initialization.</p>
             </div>
             <div className="p-3.5 rounded-xl border border-border bg-background/40">
               <p className="font-bold text-foreground mb-1">Can the developer withdraw or drain liquidity before bonding?</p>

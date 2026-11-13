@@ -1,15 +1,15 @@
-# DiumPad — Raydium Coin Launchpad (`$DIUMPAD`)
+# DiumPad — Solana Coin Launchpad (`$DIUMPAD`)
 
 > **"Coins that give back."**  
-> Launch a Solana coin in seconds. You choose where its trading fees go: airdrops, buybacks, holder rewards or liquidity. Built on Raydium LaunchLab.
+> Launch a Solana coin in seconds. You choose where its trading fees go: airdrops, buybacks, holder rewards or liquidity. Powered by pump.fun.
 
 ---
 
 ## 🌟 Overview
 
-**DiumPad** is a decentralized token launchpad on Solana powered by **Raydium LaunchLab**. It transforms standard speculative bonding curves into self-sustaining community engines through an automated **4-Way Fee Split** architecture.
+**DiumPad** is a decentralized token launchpad on Solana powered by **pump.fun**. It transforms standard speculative bonding curves into self-sustaining community engines through an automated **4-Way Fee Split** architecture.
 
-- **Bonding Target:** `85 SOL` — Once reached, all liquidity is automatically seeded and permanently locked into a full Raydium CPMM liquidity pool.
+- **Bonding Target:** `85 SOL` — Once reached, all liquidity is automatically seeded and permanently locked into a full liquidity pool.
 - **Fair Launch Cost:** `0.05 SOL` flat network initialization fee.
 - **No Rugs:** Liquidity LP tokens are programmatically burned upon graduation.
 
@@ -17,7 +17,7 @@
 
 ## 🛠️ Key Features
 
-- **Raydium LaunchLab Integration:** Direct constant-product bonding curve migration.
+- **pump.fun Integration:** Direct constant-product bonding curve mechanics.
 - **Customizable Fee Split ("Coins that give back"):**
   - **Airdrops:** Escrowed and distributed to diamond hand holders via automated snapshots.
   - **Buybacks:** Programmatic market buy & burn sent straight to the Solana incinerator.
@@ -54,7 +54,7 @@ npm run build
 - **Framework:** React 19 + TypeScript + Vite
 - **Styling:** Tailwind CSS v4 + Glassmorphism + Cinematic animations
 - **Icons:** Lucide React
-- **Engine:** Raydium LaunchLab constant product bonding curve simulation
+- **Engine:** pump.fun constant product bonding curve simulation
 - **Deployment:** GitHub Pages / Vercel ready
 
 ---

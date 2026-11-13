@@ -25,7 +25,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <span>Launches opening soon</span>
             <span className="text-border">·</span>
             <span className="text-primary font-medium flex items-center gap-1">
-              Built on Raydium LaunchLab
+              Powered by pump.fun
             </span>
           </div>
 
@@ -91,7 +91,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             </div>
             <span className="font-display font-bold text-lg text-foreground mt-3 tracking-wide">DiumPad</span>
-            <span className="text-[11px] font-mono text-muted-foreground">Raydium LaunchLab</span>
+            <span className="text-[11px] font-mono text-muted-foreground">pump.fun Engine</span>
           </div>
 
           {/* Floating Meteors */}

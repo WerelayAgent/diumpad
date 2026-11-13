@@ -32,7 +32,7 @@ export function App() {
 
   // Wallet State
   const [walletConnected, setWalletConnected] = useState(true);
-  const [walletAddress, setWalletAddress] = useState('7eETWYjUsb49xv87UoViovfdKKywo8keuDdqtFjDdium');
+  const [walletAddress, setWalletAddress] = useState('9xKr4mZ8pQ1wL2yV5u8I0o3P6a9S2d5F8g1H4j7K0l');
   const [walletBalance, setWalletBalance] = useState(12.45);
 
   // Toast

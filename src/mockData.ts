@@ -7,7 +7,7 @@ export const INITIAL_COINS: Coin[] = [
     ticker: 'DIUMPAD',
     description: 'The premier Raydium LaunchLab token launchpad on Solana. Empowering creators with fee-split mechanics: airdrops, buybacks, holder rewards, and auto-bonding.',
     imageUrl: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=400&q=80',
-    ca: '7eETWYjUsb49xv87UoViovfdKKywo8keuDdqtFjDdium',
+    ca: 'D1umPad8vKnP4mZ8pQ1wL2yV5u8I0o3P6a9S2d5F8g1H',
     pair: 'SOL',
     priceSol: 0.000084,
     priceUsd: 0.0126,

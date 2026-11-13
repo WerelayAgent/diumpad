@@ -92,16 +92,30 @@ export const CoinDetailModal: React.FC<CoinDetailModalProps> = ({
                 )}
               </div>
               <div className="mt-1 flex items-center gap-2">
-                <span className="text-xs font-mono text-muted-foreground truncate max-w-[200px] sm:max-w-xs">
-                  {coin.ca}
-                </span>
-                <button
-                  onClick={handleCopy}
-                  className="text-muted-foreground hover:text-foreground transition-colors p-1"
-                  title="Copy CA"
-                >
-                  {copied ? <Check className="w-3.5 h-3.5 text-highlight" /> : <Copy className="w-3.5 h-3.5" />}
-                </button>
+                {coin.ca.startsWith('Live') ? (
+                  <a
+                    href="https://pump.fun"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/25 transition-colors font-mono"
+                  >
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                    Live now on pump.fun ↗
+                  </a>
+                ) : (
+                  <>
+                    <span className="text-xs font-mono text-muted-foreground truncate max-w-[200px] sm:max-w-xs">
+                      {coin.ca}
+                    </span>
+                    <button
+                      onClick={handleCopy}
+                      className="text-muted-foreground hover:text-foreground transition-colors p-1"
+                      title="Copy CA"
+                    >
+                      {copied ? <Check className="w-3.5 h-3.5 text-highlight" /> : <Copy className="w-3.5 h-3.5" />}
+                    </button>
+                  </>
+                )}
               </div>
             </div>
           </div>

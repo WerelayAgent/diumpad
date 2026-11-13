@@ -21,6 +21,11 @@ export const CoinCard: React.FC<CoinCardProps> = ({
 
   const handleCopy = (e: React.MouseEvent) => {
     e.stopPropagation();
+    if (coin.ca.startsWith('Live')) {
+      window.open('https://pump.fun', '_blank');
+      showToast(`Opening $${coin.ticker} on pump.fun`);
+      return;
+    }
     navigator.clipboard.writeText(coin.ca);
     setCopied(true);
     showToast(`Copied $${coin.ticker} CA`);

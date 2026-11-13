@@ -57,19 +57,16 @@ export const CoinRow: React.FC<CoinRowProps> = ({
               {coin.name}
               <span className="font-mono text-xs text-primary">${coin.ticker}</span>
             </div>
-            <div className="text-[11px] font-mono text-muted-foreground flex items-center gap-1">
-              {coin.ca.startsWith('Live') ? (
-                <span className="text-emerald-400 flex items-center gap-1 font-semibold text-[10px]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  Live on pump.fun
+            <div className="text-[11px] font-mono text-muted-foreground flex items-center gap-1.5">
+              <span>{coin.ca.slice(0, 6)}...{coin.ca.slice(-4)}</span>
+              <button onClick={handleCopy} className="hover:text-foreground">
+                {copied ? <Check className="w-3 h-3 text-highlight" /> : <Copy className="w-3 h-3" />}
+              </button>
+              {coin.isMainCoin && (
+                <span className="text-[10px] text-emerald-400 font-semibold flex items-center gap-1 bg-emerald-500/10 border border-emerald-500/20 px-1.5 py-0.5 rounded">
+                  <span className="w-1 h-1 rounded-full bg-emerald-400 animate-pulse" />
+                  pump.fun
                 </span>
-              ) : (
-                <>
-                  {coin.ca.slice(0, 6)}...{coin.ca.slice(-4)}
-                  <button onClick={handleCopy} className="hover:text-foreground">
-                    {copied ? <Check className="w-3 h-3 text-highlight" /> : <Copy className="w-3 h-3" />}
-                  </button>
-                </>
               )}
             </div>
           </div>

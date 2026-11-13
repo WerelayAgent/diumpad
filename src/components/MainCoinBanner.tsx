@@ -49,18 +49,37 @@ export const MainCoinBanner: React.FC<MainCoinBannerProps> = ({
         </h2>
       </div>
 
+      {/* Contract Address Box with Copy */}
+      <div
+        aria-label="DiumPad contract address"
+        className="flex h-10 w-full items-center gap-2.5 rounded-xl border border-border bg-background px-3 sm:w-auto sm:min-w-64 shadow-inner"
+      >
+        <span className="border-r border-border pr-2 text-xs font-bold text-primary font-mono">CA</span>
+        <span className="min-w-0 flex-1 truncate font-mono text-xs text-muted-foreground select-all" title={coin.ca}>
+          {coin.ca}
+        </span>
+        <button
+          onClick={handleCopy}
+          className="inline-flex items-center justify-center rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent h-7 w-7 transition-colors"
+          title="Copy CA address"
+          aria-label="Copy CA address"
+        >
+          {copied ? <Check className="w-3.5 h-3.5 text-highlight" /> : <Copy className="w-3.5 h-3.5" />}
+        </button>
+      </div>
+
       {/* Live now on pump.fun Button */}
       <a
-        href="https://pump.fun"
+        href={`https://pump.fun/coin/${coin.ca}`}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Live now on pump.fun"
-        className="flex h-10 w-full items-center justify-center gap-2.5 rounded-xl border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500/20 px-4 sm:w-auto shadow-sm transition-all group"
+        className="flex h-10 w-full items-center justify-center gap-2 rounded-xl border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500/20 px-3.5 sm:w-auto shadow-sm transition-all group"
         title="Live now on pump.fun"
       >
         <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
         <span className="text-xs font-bold text-emerald-400 tracking-wide font-mono">
-          Live now on pump.fun
+          Live on pump.fun
         </span>
         <span className="text-xs text-emerald-400 group-hover:translate-x-0.5 transition-transform">
           ↗

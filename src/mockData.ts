@@ -7,7 +7,7 @@ export const INITIAL_COINS: Coin[] = [
     ticker: 'DIUMPAD',
     description: 'The premier pump.fun token launchpad on Solana. Empowering creators with fee-split mechanics: airdrops, buybacks, holder rewards, and auto-bonding.',
     imageUrl: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=400&q=80',
-    ca: 'Live now on pump.fun',
+    ca: 'AfCdvu9Mq4vadfzEGYxcqH1JzWG9UwnMdLrZ9fggpump',
     pair: 'SOL',
     priceSol: 0.000084,
     priceUsd: 0.0126,
